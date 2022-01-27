@@ -8,7 +8,7 @@
       :center="{lat:10, lng:10}"
       :zoom="7"
       map-type-id="terrain"
-      style="width: 500px; height: 300px"
+      style="width: 80vw; height: 100%"
     >
       <GmapMarker
         v-for="(m, index) in markers"
@@ -25,5 +25,10 @@
 <script>
 export default {
   name: 'IndexPage',
+  data() {
+    return {
+      markers: []
+    }
+  }
 }
 </script>
