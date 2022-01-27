@@ -49,8 +49,3 @@ export default {
   },
 }
 </script>
-// <style lang="scss" scoped>
-// .left-menu {
-//   cursor: pointer;
-// }
-// </style>
