@@ -30,7 +30,7 @@ export default {
       {
         id: 1,
         name: 'Browse',
-        icon: ''
+        icon: '',
       },
       {
         id: 2,

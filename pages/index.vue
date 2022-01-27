@@ -1,6 +1,7 @@
 <template>
   <div class="flex h-full w-fit">
     <div class="bg-white text-primary">
+      <!-- documantation https://www.npmjs.com/package/vue2-google-maps -->
       <gmap-map
         ref="mainMap"
         :center="startLocation"
@@ -16,6 +17,7 @@
             disableDefaultUi: false
           }"
       >
+        <!-- https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions -->
         <gmap-marker
           v-for="(item, key) in coordinates"
           :key="key"
