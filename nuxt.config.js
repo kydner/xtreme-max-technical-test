@@ -22,7 +22,8 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '@/plugins/vue2-google-maps'
+    '@/plugins/vue2-google-maps',
+    '@/plugins/icon'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -32,7 +33,9 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/axios',
+    '@nuxtjs/fontawesome',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -52,5 +55,12 @@ export default {
 
   tailwindcss: {
     // Options
-  }
+  },
+
+  fontawesome: {
+    icons:{
+     solid:true,
+     brands:true
+    }
+   }
 }

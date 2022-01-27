@@ -1,0 +1,83 @@
+{
+  "0": {
+    "city": "Merlion",
+    "phone": "0 (800) 40 7887",
+    "email": "merlion@merlion.com",
+    "full_name": "Merlion",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendu, similique, tempore tenetur temporibus velit expedita.",
+    "lat": "1.286920",
+    "lng": "103.854570"
+  },
+  "1": {
+    "city": "ASM",
+    "phone": "0 (800) 40 7887",
+    "email": "asm@n.ua",
+    "full_name": "Asian Civilisations Museum",
+    "description": "Lorem ipsum dolor sit amet elit. Iusto earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
+    "lat": "1.287466,",
+    "lng": "103.851424"
+  },
+  "2": {
+    "city": "Clarke Quay",
+    "phone": "0 (800) 40 7887",
+    "email": "cq@com",
+    "full_name": "Clarke Quay",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
+    "lat": "1.290555",
+    "lng": "103.846188"
+  },
+  "3": {
+    "city": "Fort Canning Park",
+    "phone": "0 (800) 40 7887",
+    "email": "fcp@com",
+    "full_name": "Fort Canning Park",
+    "description": "Lorem ipsum dolor sit amet consectetur elit. Iusto earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
+    "lat": "1.295526",
+    "lng": "103.845331"
+  },
+  "4": {
+    "city": "OR",
+    "phone": "0 (800) 40 7887",
+    "email": "or@com",
+    "full_name": "Orchard Road",
+    "description": "Lorem ipsum dolor sit amet adipisicing elit. Iusto accusantium earum expedita ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
+    "lat": "1.302279",
+    "lng": "103.837399"
+  },
+  "5": {
+    "city": "SF",
+    "phone": "0 (800) 40 7887",
+    "email": "sf@com",
+    "full_name": "Singapore Flyer",
+    "description": "Lorem ipsum consectetur adipisicing elit. Iusto accusantium earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
+    "lat": "1.289332",
+    "lng": "103.863152"
+  },
+  "6": {
+    "city": "MBS",
+    "phone": "0 (800) 40 7887",
+    "email": "mbs@com",
+    "full_name": "Marina Bay Sands",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium earum error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
+    "lat": "1.283099",
+    "lng": "103.860295"
+  },
+  "7": {
+    "city": "GBTB",
+    "phone": "0 (800) 40 7887",
+    "email": "gbtb@com",
+    "full_name": " Gardens By The Bay",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, tempore tenetur velit expedita.",
+    "lat": "1.281790",
+    "lng": "103.863954"
+  },
+  "8": {
+    "city": "CTW",
+    "phone": "0 (800) 40 7887",
+    "email": "ctw@com",
+    "full_name": "­Chinatown",
+    "description": "Lorem ipsum dolor sit adipisicing elit. Iusto accusantium earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
+    "lat": "1.284193",
+    "lng": "103.863954"
+  }
+}

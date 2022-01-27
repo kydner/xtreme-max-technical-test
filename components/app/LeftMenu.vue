@@ -1,9 +1,9 @@
 <template>
-  <div class="left-menu h-screen bg-primary">
+  <div class="left-menu h-screen bg-tersiery">
     <div
     v-for="(menu, i) in menus"
     :key="menu.id"
-    :class="`${index === i? 'bg-secondary': 'bg-primary'} h-130 border border-tersiery`"
+    :class="`${index === i? 'bg-secondary': 'bg-tersiery'} h-left-menu`"
     @click="index = i"
     >
       <div class="flex flex-col justify-center items-center h-full p-8 text-center">
@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       menus: [],
-      index: 1
+      index: 0
     }
   },
   mounted() {

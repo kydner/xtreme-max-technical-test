@@ -1,15 +1,12 @@
 <template>
   <div class="flex h-full w-fit">
-    <div class="flex items-center justify-center h-full bg-primary w-60">
-      search
-    </div>
-    <div class="bg-white w-fit text-primary">
+    <div class="bg-white text-primary">
       <gmap-map
         ref="mainMap"
         :center="startLocation"
-        :zoom="6"
+        :zoom="17"
         map-type-id="roadmap"
-        style="width: 80vw; height: 100%"
+        style="width: 74vw; height: 100%"
         :options="{
             zoomControl: false,
             scaleControl: false,
@@ -28,25 +25,23 @@
           @click="toggleInfo(item, key)"
         ></gmap-marker>
       </gmap-map>
-      <transition name="map-info-window-slide">
         <div
           v-if="infoOpened"
-          class="map-info-window"
+          class="map-info-window flex flex-col"
           :opened="infoOpened"
           :position="infoPosition"
         >
-          <div v-if="selectedMarker" class="city-info">
-            <div class="city-name">{{ selectedMarker.city }}</div>
+          <div class="h-36 bg-purple">
+            image
+          </div>
+          <div class="flex items-center bg-secondary h-16 p-8 font-bold text-lg">
+            {{ selectedMarker.full_name }}
+          </div>
+          <div>
+            <div class="p-8 text-sm">{{ selectedMarker.description }}</div>
             <div class="city-phone">{{ selectedMarker.phone }}</div>
-            <div class="city-email">{{ selectedMarker.email }}</div>
-            <div class="city-location">{{ selectedMarker.full_name }}</div>
-            <button class="btn btn-full-width btn-main">Проложить маршрут</button>
-            <div class="map-btn-close-holder">
-              <button class="map-btn-close" @click="closeInfoWindow()">close</button>
-            </div>
           </div>
         </div>
-      </transition>
     </div>
   </div>
 </template>
@@ -63,48 +58,18 @@ export default {
       mapMarker,
       mapMarkerActive,
       startLocation: {
-        lat: 49.0384,
-        lng: 33.4513
+        lat: 1.286920,
+        lng: 103.854570
       },
-      coordinates: {
-        0: {
-          city: "Киев (сервисный центр)",
-          phone: "0 (800) 40 7887",
-          email: "superservice@nfm.com.ua",
-          full_name: "Киев",
-          lat: "50.4021702",
-          lng: "30.3926088"
-        },
-        1: {
-          city: "Харьков (сервисный центр)",
-          phone: "0 (800) 40 7887",
-          email: "superservice@nfm.com.ua",
-          full_name:
-            "Харьковская обл., Харьковский р-н, пгт. Песочин, ул. Надежды, 15",
-          lat: "49.9543502",
-          lng: "36.1241697"
-        },
-        2: {
-          city: "Николаев",
-          phone: "0 (800) 40 7887",
-          email: "superservice@nfm.com.ua",
-          full_name: "ул. Надежды, 15",
-          lat: "46.9332135",
-          lng: "31.8679149"
-        },
-        3: {
-          city: "Дніпро́ (сервисный центр)",
-          phone: "0 (800) 40 7887",
-          email: "superservice@nfm.com.ua",
-          full_name: "вулиця 20-річчя Перемоги, 12",
-          lat: "48.4164999",
-          lng: "35.1338916"
-        }
-      },
+      coordinates: {},
       selectedKey: null,
       selectedMarker: null,
       infoOpened: false
     }
+  },
+  async mounted() {
+    const coordinates = (await this.$axios.get('/map.json')).data
+    this.coordinates = coordinates
   },
   methods: {
     getMarkers(key) {
@@ -130,3 +95,15 @@ export default {
   }
 }
 </script>
+<style scoped>
+.map-info-window {
+position: fixed;
+width: 250px;
+/* height: 100vh; */
+background-color: #282c37;
+color: white;
+top: 110px;
+right: 0;
+bottom: 0;
+}
+</style>

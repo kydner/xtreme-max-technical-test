@@ -4,10 +4,12 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        '150': '150px'
+        'w-menu': '125px',
+        'submenu': '470px'
       },
       height: {
-        '130': '130px'
+        'h-menu': '125px',
+        'top-menu': '130px'
       }
     },
     colors: {
