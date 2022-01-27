@@ -1,12 +1,19 @@
 <template>
-  <div class="left-menu w-150 h-screen">
+  <div class="left-menu h-screen bg-primary">
     <div
     v-for="(menu, i) in menus"
     :key="menu.id"
-    :class="`${index === i? 'bg-secondary': ''} h-130 border border-tersiery`"
+    :class="`${index === i? 'bg-secondary': 'bg-primary'} h-130 border border-tersiery`"
     @click="index = i"
     >
-
+      <div class="flex flex-col justify-center items-center h-full p-8 text-center">
+        <div>
+          Icon
+        </div>
+        <div>
+          {{ menu.name }}
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -49,3 +56,8 @@ export default {
   },
 }
 </script>
+<style scoped>
+.left-menu {
+  cursor: pointer;
+}
+</style>

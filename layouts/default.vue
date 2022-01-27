@@ -1,12 +1,13 @@
 <template>
-  <div class="relative flex min-h-screen sm:pt-0 bg-primary text-white">
-    <div>
+  <div class="relative flex min-h-screen sm:pt-0 text-white">
+    <div class="w-150">
       <LeftMenu />
     </div>
-    <div>
+    <div class="flex flex-col w-full">
       <TopMenu />
+      <nuxt />
     </div>
-    <nuxt />
+
   </div>
 </template>
 <script>
