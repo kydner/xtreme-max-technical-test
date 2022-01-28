@@ -4,6 +4,7 @@
     "phone": "0 (800) 40 7887",
     "email": "merlion@merlion.com",
     "full_name": "Merlion",
+    "website": "http://merlion.com",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendu, similique, tempore tenetur temporibus velit expedita.",
     "lat": "1.286920",
     "lng": "103.854570"
@@ -13,6 +14,7 @@
     "phone": "0 (800) 40 7887",
     "email": "asm@n.ua",
     "full_name": "Asian Civilisations Museum",
+    "website": "http://asian-civil.com",
     "description": "Lorem ipsum dolor sit amet elit. Iusto earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
     "lat": "1.287466,",
     "lng": "103.851424"
@@ -22,6 +24,7 @@
     "phone": "0 (800) 40 7887",
     "email": "cq@com",
     "full_name": "Clarke Quay",
+    "website": "http://clare-quay.com",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
     "lat": "1.290555",
     "lng": "103.846188"
@@ -31,6 +34,7 @@
     "phone": "0 (800) 40 7887",
     "email": "fcp@com",
     "full_name": "Fort Canning Park",
+    "website": "http://fort-canning-park.com",
     "description": "Lorem ipsum dolor sit amet consectetur elit. Iusto earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
     "lat": "1.295526",
     "lng": "103.845331"
@@ -40,6 +44,7 @@
     "phone": "0 (800) 40 7887",
     "email": "or@com",
     "full_name": "Orchard Road",
+    "website": "http://orchard-road.com",
     "description": "Lorem ipsum dolor sit amet adipisicing elit. Iusto accusantium earum expedita ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
     "lat": "1.302279",
     "lng": "103.837399"
@@ -49,6 +54,7 @@
     "phone": "0 (800) 40 7887",
     "email": "sf@com",
     "full_name": "Singapore Flyer",
+    "website": "http://sigapore-flayer.com",
     "description": "Lorem ipsum consectetur adipisicing elit. Iusto accusantium earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
     "lat": "1.289332",
     "lng": "103.863152"
@@ -58,6 +64,7 @@
     "phone": "0 (800) 40 7887",
     "email": "mbs@com",
     "full_name": "Marina Bay Sands",
+    "website": "http://marina-bay-sands.com",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto accusantium earum error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
     "lat": "1.283099",
     "lng": "103.860295"
@@ -67,6 +74,7 @@
     "phone": "0 (800) 40 7887",
     "email": "gbtb@com",
     "full_name": " Gardens By The Bay",
+    "website": "http://garden-btb.com",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, tempore tenetur velit expedita.",
     "lat": "1.281790",
     "lng": "103.863954"
@@ -76,6 +84,7 @@
     "phone": "0 (800) 40 7887",
     "email": "ctw@com",
     "full_name": "­Chinatown",
+    "website": "http://china-town.com",
     "description": "Lorem ipsum dolor sit adipisicing elit. Iusto accusantium earum expedita explicabo ratione minus error eaque nobis dignissimos assumenda sit dolorum, necessitatibus consequuntur quaerat molestias beatae itaque similique ipsam suscipit nemo libero laudantium. Unde molestiae sed illo, repellendus sint quia odio qui repudiandae, similique, tempore tenetur temporibus velit expedita.",
     "lat": "1.284193",
     "lng": "103.863954"

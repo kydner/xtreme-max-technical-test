@@ -41,8 +41,8 @@
           </div>
           <div>
             <div class="p-8 text-sm">{{ selectedMarker.description }}</div>
-            <div class="city-phone">{{ selectedMarker.phone }}</div>
-            <div class="city-website">{{ selectedMarker.website }}</div>
+            <div class="city-phone px-8">{{ selectedMarker.phone }}</div>
+            <div class="city-website px-8">{{ selectedMarker.website }}</div>
           </div>
         </div>
     </div>
@@ -91,12 +91,14 @@ export default {
       this.selectedKey = key;
       this.infoOpened = !this.infoOpened;
       setTimeout(() => {
+        /// zoom on click
         this.zoom = this.infoOpened? 17: 15
+        /// set position
         this.startLocation = {
           lat: parseFloat(marker.lat),
           lng: parseFloat(marker.lng),
         }
-      }, 200);
+      }, 50);
     },
     closeInfoWindow() {
       this.infoOpened = false;
