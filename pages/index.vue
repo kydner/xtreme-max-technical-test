@@ -5,7 +5,7 @@
       <gmap-map
         ref="mainMap"
         :center="startLocation"
-        :zoom="17"
+        :zoom="zoom"
         map-type-id="roadmap"
         style="width: 74vw; height: 100%"
         :options="{
@@ -18,12 +18,12 @@
           }"
       >
         <!-- https://developers.google.com/maps/documentation/javascript/reference/map#MapOptions -->
+          <!-- :icon="getMarkers(key)" -->
         <gmap-marker
           v-for="(item, key) in coordinates"
           :key="key"
           :position="getPosition(item)"
           :clickable="true"
-          :icon="getMarkers(key)"
           @click="toggleInfo(item, key)"
         ></gmap-marker>
       </gmap-map>
@@ -53,10 +53,9 @@
 export default {
   name: 'IndexPage',
   data() {
-      const mapMarker =
-      "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMjkiIHZpZXdCb3g9IjAgMCAyMyAyOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0yMyAxMS41QzIzIDIxLjUgMTEuNSAyOC41IDExLjUgMjguNUMxMS41IDI4LjUgMCAyMS41IDAgMTEuNUMwIDUuMTQ4NzMgNS4xNDg3MyAwIDExLjUgMEMxNy44NTEzIDAgMjMgNS4xNDg3MyAyMyAxMS41WiIgZmlsbD0iI0M3MDYyOSIvPg0KPGNpcmNsZSBjeD0iMTEuNSIgY3k9IjExLjUiIHI9IjUuNSIgZmlsbD0iIzgxMDAxNyIvPg0KPC9zdmc+DQo=";
+      const mapMarker = "/marker.svg";
     const mapMarkerActive =
-      "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMjkiIHZpZXdCb3g9IjAgMCAyMyAyOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik0yMyAxMS41QzIzIDIxLjUgMTEuNSAyOC41IDExLjUgMjguNUMxMS41IDI4LjUgMCAyMS41IDAgMTEuNUMwIDUuMTQ4NzMgNS4xNDg3MyAwIDExLjUgMEMxNy44NTEzIDAgMjMgNS4xNDg3MyAyMyAxMS41WiIgZmlsbD0iIzMzMzMzMyIvPg0KPGNpcmNsZSBjeD0iMTEuNSIgY3k9IjExLjUiIHI9IjUuNSIgZmlsbD0iYmxhY2siLz4NCjwvc3ZnPg0K";
+      "/marker-active.svg";
     return {
       mapMarker,
       mapMarkerActive,
@@ -64,6 +63,7 @@ export default {
         lat: 1.286920,
         lng: 103.854570
       },
+      zoom: 15,
       coordinates: {},
       selectedKey: null,
       selectedMarker: null,
@@ -90,6 +90,13 @@ export default {
       this.selectedMarker = marker;
       this.selectedKey = key;
       this.infoOpened = !this.infoOpened;
+      setTimeout(() => {
+        this.zoom = this.infoOpened? 17: 15
+        this.startLocation = {
+          lat: parseFloat(marker.lat),
+          lng: parseFloat(marker.lng),
+        }
+      }, 200);
     },
     closeInfoWindow() {
       this.infoOpened = false;
