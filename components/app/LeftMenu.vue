@@ -8,11 +8,11 @@
     >
       <div class="flex flex-col justify-center items-center h-full p-8 text-center">
         <div>
-          Icon
+          <img :src="menu.icon" alt="">
         </div>
-        <div>
+        <span class="text-grey">
           {{ menu.name }}
-        </div>
+        </span>
       </div>
     </div>
   </div>
@@ -30,27 +30,27 @@ export default {
       {
         id: 1,
         name: 'Browse',
-        icon: '',
+        icon: '/browse.png',
       },
       {
         id: 2,
         name: 'Suggest Attraction',
-        icon: ''
+        icon: '/suggest.png'
       },
       {
         id: 3,
         name: 'Videos',
-        icon: ''
+        icon: '/videos.png'
       },
       {
         id: 4,
         name: 'Blog',
-        icon: ''
+        icon: '/blog.png'
       },
       {
         id: 5,
         name: 'About',
-        icon: ''
+        icon: '/about.png'
       }
     ]
   },

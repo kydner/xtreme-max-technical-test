@@ -1,6 +1,7 @@
 <template>
   <div class="flex h-full w-fit">
     <div class="bg-white text-primary">
+      <!-- https://codesandbox.io/s/q67u0?file=/src/components/Map.vue -->
       <!-- documantation https://www.npmjs.com/package/vue2-google-maps -->
       <gmap-map
         ref="mainMap"
@@ -71,20 +72,25 @@ export default {
     }
   },
   async mounted() {
+    /// get coordinate from json
     const coordinates = (await this.$axios.get('/map.json')).data
     this.coordinates = coordinates
   },
   methods: {
+    /// not used, because use default icon
     getMarkers(key) {
       if (this.selectedKey === key) return this.mapMarkerActive;
       return this.mapMarker;
     },
+
+    /// get map position
     getPosition(marker) {
       return {
         lat: parseFloat(marker.lat),
         lng: parseFloat(marker.lng)
       };
     },
+
     toggleInfo(marker, key) {
       this.infoPosition = this.getPosition(marker);
       this.selectedMarker = marker;
@@ -92,7 +98,7 @@ export default {
       this.infoOpened = !this.infoOpened;
       setTimeout(() => {
         /// zoom on click
-        this.zoom = this.infoOpened? 17: 15
+        this.zoom = this.infoOpened ? 17: 15
         /// set position
         this.startLocation = {
           lat: parseFloat(marker.lat),
@@ -100,10 +106,6 @@ export default {
         }
       }, 50);
     },
-    closeInfoWindow() {
-      this.infoOpened = false;
-      this.markerOptions = this.mapMarker;
-    }
   }
 }
 </script>
