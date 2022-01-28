@@ -29,12 +29,12 @@
       </gmap-map>
         <div
           v-if="infoOpened"
-          class="map-info-window flex flex-col"
+          class="map-info-window flex flex-col shadow-lg"
           :opened="infoOpened"
           :position="infoPosition"
         >
-          <div class="h-36 bg-purple">
-            image
+          <div class="relative h-48 bg-purple">
+            <img src="/singapore.png" alt="" class="object-fill h-48 w-full" >
           </div>
           <div class="flex items-center bg-secondary h-16 p-8 font-bold text-lg">
             {{ selectedMarker.full_name }}
@@ -42,6 +42,7 @@
           <div>
             <div class="p-8 text-sm">{{ selectedMarker.description }}</div>
             <div class="city-phone">{{ selectedMarker.phone }}</div>
+            <div class="city-website">{{ selectedMarker.website }}</div>
           </div>
         </div>
     </div>
@@ -100,7 +101,7 @@ export default {
 <style scoped>
 .map-info-window {
 position: fixed;
-width: 250px;
+width: 350px;
 /* height: 100vh; */
 background-color: #282c37;
 color: white;
